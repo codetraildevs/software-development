@@ -1,13 +1,32 @@
-<table border="1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+table {
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+ </style>
+</head>
+<body>
+    <table border="1">
 
     <tr>
         <th>Name</th>
         <th>Course</th>
         <th>Level</th>
     </tr>
+    <tr><td colspan="3">Academic Year 2026-2027</td></tr>
 
     <tr>
-        <td rowspan="2">Alice</td>
+        <td rowspan="3">Alice</td>
         <td>JavaScript</td>
         <td>L4</td>
     </tr>
@@ -16,5 +35,13 @@
         <td>Node.js</td>
         <td>L4</td>
     </tr>
+      <tr>
+        <td>PHP</td>
+        <td>L4</td>
+    </tr>
+
+    <tr><td colspan="3" style="font-style: italic;">Our is to help our students become software Developer</td></tr>
 
 </table>
+</body>
+</html>
