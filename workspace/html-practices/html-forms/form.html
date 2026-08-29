@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORMS - DEMOSTRATION</title>
+  </head>
+  <body>
+    <h1>Codebridge Academy Registration</h1>
+    <!-- Syntax -->
+    <form method="POST" action="/register">
+      <!-- label describes an input field -->
+      <label for="fullname"
+        >Enter FullName <span style="color: red">*</span></label
+      ><input
+        type="text"
+        name="fullname"
+        id="fullname"
+        minlength="3"
+        maxlength="20"
+        placeholder="eg:John"
+        required
+      />
+      <br /><br />
+
+      <!-- 
+        common input types:
+        1.text:general
+        2:emai:email address
+        3.password:password
+        4.number:numners
+        5.tel:telephone
+        6.date:date
+        7.time:time
+        8.file:file upload
+        9.url:url
+        10.search: search input
+        11.radio : select option
+        12.checkbox:select multiple options
+        13.range:range/slider
+        14.color:Color Selection-->
+
+      <label for="email">Email:</label
+      ><input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+      />
+      <br /><br />
+      <label for="password">Password</label
+      ><input type="password" name="password" id="password" /> <br /><br />
+      <label for="age">Age</label>
+      <input type="number" min="0" max="50" name="age" id="age" /> <br /><br />
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="telephone" /> <br />
+      <br />
+      <label for="date">Birth Day</label>
+      <input type="date" name="birthdate" id="bd" /> <br />
+      <br />
+      <label for="file">File Upload allowed pdf and document </label>
+      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" /> <br />
+      <br />
+      <!-- radio button select only one option at time -->
+      <p>Choose your gender</p>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="Female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="nottosay" value="nottosay" />
+      <label for="female">Prefer not to say</label>
+
+      <br />
+      <br />
+      <!-- checkbox  select multiple options-->
+      <p>Skills</p>
+      <input type="checkbox" name="skills" id="html" value="HTML" />
+      <label for="html">HTML</label>
+      <input type="checkbox" name="skills" id="css" value="CSS" />
+      <label for="html">CSS</label>
+      <input type="checkbox" name="skills" id="javascript" value="javascript" />
+      <label for="html">Javascript</label>
+
+      <input type="checkbox" name="skills" id="php" value="PHP" />
+      <label for="html">PHP</label>
+
+      <!-- Range -->
+      <br />
+      <br />
+      <label for="skills">HTML&CSS</label>
+      <input
+        type="range"
+        name="skillslevel"
+        id="skillslevel"
+        min="0"
+        max="100"
+        value="70"
+      />
+      <br />
+      <br />
+      <!-- Dropdown list  <select> -->
+      <label for="country">Choose your Country</label>
+      <select id="country" name="country">
+        <option value="rwanda">RWANDA</option>
+        <option value="kenya">KENYA</option>
+        <option value="burundi">BURUNDI</option>
+      </select>
+      <br />
+      <br />
+      <!-- text area -->
+      <label for="message">Message:</label>
+      <textarea
+        name="message"
+        id="message"
+        rows="5"
+        placeholder="write your message..."
+      ></textarea>
+      <br />
+      <br />
+      <br />
+      <br />
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="fullname"
+          >Enter FullName <span style="color: red">*</span></label
+        ><input
+          type="text"
+          name="fullname"
+          id="fullname"
+          minlength="3"
+          maxlength="20"
+          placeholder="eg:John"
+          required
+        />
+        <br />
+        <br />
+        <label for="phone">Telephone</label>
+        <input
+          type="phone"
+          name="myphone"
+          id="myphone"
+          required
+          placeholder="07xxxxxxxx"
+        />
+      </fieldset>
+<br>
+      <fieldset>
+        <legend>Educational</legend>
+       <p>Select your highest level</p>
+        
+        <input type="radio" name="level" id="level" value="Phd">
+        <label for="phd">Phd</label>
+        <input type="radio" name="level" id="level" value="Dr.">
+        <label for="dr">Dr</label>
+        <input type="radio" name="level" id="level" value="a0">
+        <label for="a0">A0</label>
+        <input type="radio" name="level" id="level" value="a1">
+        <label for="a1">A1</label>
+        <input type="radio" name="level" id="level" value="a2">
+        <label for="a2">A2</label>
+        <input type="radio" name="level" id="level" value="none">
+        <label for="none">None</label>
+      </fieldset>
+
+    
+
+      <br />
+      <br />
+
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+      <button type="button">click here</button>
+    </form>
+  </body>
+</html>

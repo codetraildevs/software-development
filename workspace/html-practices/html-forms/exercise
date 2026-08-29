@@ -1,0 +1,35 @@
+Practical Exercise 1 — Contact Form
+Create a contact form containing:
+•	Full Name 
+•	Email 
+•	Phone 
+•	Subject 
+•	Message 
+•	Submit button 
+•	Reset button 
+Requirements:
+•	Every field must have a label 
+•	Use appropriate input types. 
+•	Use required. 
+•	Use meaningful id and name values.
+
+
+Practical Exercise 2 — Student Registration
+Create a CodeBridge Academy Student Registration Form.
+Fields:
+1.	Full Name 
+2.	Email 
+3.	Phone Number 
+4.	Date of Birth 
+5.	Gender 
+6.	District 
+7.	Course 
+8.	Education Level 
+9.	Skills 
+10.	Profile Photo 
+11.	Short Description 
+12.	Password 
+13.	Confirm Password 
+14.	Submit 
+15.	Reset 
+Use appropriate HTML input types.
