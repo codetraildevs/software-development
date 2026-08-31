@@ -1,8 +1,8 @@
 Practical Exercise 1 — Contact Form
 Create a contact form containing:
-•	Full Name 
+•	Full Name
 •	Email 
-•	Phone 
+•	Phone
 •	Subject 
 •	Message 
 •	Submit button 
@@ -24,7 +24,7 @@ Fields:
 5.	Gender 
 6.	District 
 7.	Course 
-8.	Education Level 
+8.	Highest Education Level 
 9.	Skills 
 10.	Profile Photo 
 11.	Short Description 
@@ -33,3 +33,59 @@ Fields:
 14.	Submit 
 15.	Reset 
 Use appropriate HTML input types.
+
+Practical Exercise 3 — Job Application Form
+Create a job application form containing:
+•	Full Name 
+•	Email 
+•	Phone 
+•	Date of Birth 
+•	Position 
+•	CV Upload 
+•	Years of Experience 
+•	Skills 
+•	Cover Letter 
+•	Available Start Date 
+•	Submit button 
+Apply HTML validation using:
+required
+min
+max
+minlength
+maxlength
+accept
+where appropriate.
+
+Challenge — CodeBridge Course Registration
+Build a complete registration page for:
+CodeBridge Academy Holiday Tech Bootcamp
+The form should collect:
+Personal Information
+•	Full Name 
+•	Email 
+•	Phone 
+•	Gender 
+•	Date of Birth 
+•	District 
+Program Information
+•	Program 
+•	Duration 
+•	Preferred schedule 
+•	Previous programming experience 
+Skills
+•	HTML 
+•	CSS 
+•	JavaScript 
+•	Python 
+•	PHP 
+•	Java 
+•	Other 
+Additional Information
+•	Why do you want to join? 
+•	Upload previous project/CV 
+Account
+•	Password 
+•	Confirm Password 
+Actions
+REGISTER
+CLEAR
