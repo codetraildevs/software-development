@@ -74,8 +74,6 @@ nav li a:hover {
   margin: 30px auto;
   padding: 20px;
   display: flex;
-
-
 }
 #welcome{
   background-color: #0b5dd7;
@@ -105,8 +103,7 @@ nav li a:hover {
   background-size: cover;
   border-radius: 5px;
   border: 1px solid #ddd;
-  color: white;
-
+  color:white;
 
 }
 #home h2 {
@@ -116,8 +113,35 @@ nav li a:hover {
 #home p {
   font-size: 18px;
 }
+#home .hero-buttons{
+  padding: 20px;
+}
+#home .hero-buttons a{
+  color: #fff;
+  padding:15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
 
+#home .hero-buttons .primary-btn{
+  background-color: #0b5ed7;
+  margin-right: 25px;
+}
+#home .hero-buttons .primary-btn:hover{
+  background-color: #8c9eff;
+  color: #333;
 
+}
+#home .hero-buttons .secondary-btn{
+  background-color: gray;
+  color: black;
+
+}
 aside {
   background-color: #e7f1ff;
   border-left: 5px solid #0b5ed7;
