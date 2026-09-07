@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice on div & span</title>
+    <!-- Internal Styles -->
+    <style>
+      /* Add your styles here */
+      div {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      #code {
+        color: blue;
+      }
+      #real {
+        color: green;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 24px;
+        /* 1rem=16px */
+      }
+
+      #our-courses {
+        font-size: x-large;
+        text-decoration-line: underline;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      .welcome {
+        border: 1px solid #ccc;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+      }
+    
+      .courses {
+        border: 1px solid #333;
+        background-color: white;
+        border-radius: 5px;
+        color: #333;
+      }
+      .course-list {
+        list-style-type:lower-latin;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Id & class -->
+    <div class="welcome">
+      <h3>Welcome to <span id="code">Codebridge</span> Academy</h3>
+      <p> Bridging learning to <span id="real">real career</span> paths</p>
+    </div>
+
+    <div class="courses">
+      <h3 id="our-courses">Our Courses</h3>
+      <ul class="course-list">
+        <li>Web Development</li>
+        <li>Data Science</li>
+        <li>Cloud Computing</li>
+        <li>Programming</li>
+      </ul>
+
+      <button>Enroll Now</button>
+    </div>
+  </body>
+</html>

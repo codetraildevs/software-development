@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* css */
+        .form-section {
+    background-color: #f4f7fb;
+    padding: 50px 20px;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    color: #0b5ed7;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Form group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Text inputs */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="url"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0b5ed7;
+
+    box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.15);
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Radio */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+
+/* File */
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed #aaa;
+    border-radius: 6px;
+}
+
+
+/* Range */
+
+.form-group input[type="range"] {
+    width: 100%;
+    accent-color: #0b5ed7;
+    cursor: pointer;
+}
+
+#experienceValue {
+    color: #0b5ed7;
+    font-weight: bold;
+}
+
+/* Buttons */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    flex: 1;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Primary button */
+
+.btn-primary {
+    background-color: #0b5ed7;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #084298;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(11, 94, 215, 0.3);
+}
+
+
+/* Secondary button */
+
+.btn-secondary {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #ced4da;
+    transform: translateY(-2px);
+}
+    </style>
+</head>
+<body>
+    <section class="form-section">
+    <div class="form-container">
+
+        <h2>Student Registration</h2>
+        <p>Register for a CodeBridge Academy training program.</p>
+
+        <form>
+
+            <!-- Text input -->
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                >
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                >
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+250 780 000 000"
+                >
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <!-- Number -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="12"
+                    max="60"
+                    placeholder="Enter your age"
+                >
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+                <label for="date">Date of Birth</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                >
+            </div>
+
+            <!-- Select -->
+            <div class="form-group">
+                <label for="program">Select Program</label>
+
+                <select id="program" name="program">
+                    <option value="">-- Select a program --</option>
+                    <option value="software">Software Development</option>
+                    <option value="networking">Networking</option>
+                    <option value="computer-systems">
+                        Computer Systems & Architecture
+                    </option>
+                    <option value="electronics">Electronics</option>
+                </select>
+            </div>
+
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <label>Gender</label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group">
+                <label>Skills</label>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="skills" value="javascript">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="skills" value="php">
+                        PHP
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="skills" value="python">
+                        Python
+                    </label>
+                </div>
+            </div>
+
+            <!-- File -->
+            <div class="form-group">
+                <label for="photo">Upload Photo</label>
+                <input
+                    type="file"
+                    id="photo"
+                    name="photo"
+                >
+            </div>
+
+            <!-- URL -->
+            <div class="form-group">
+                <label for="github">GitHub Profile</label>
+                <input
+                    type="url"
+                    id="github"
+                    name="github"
+                    placeholder="https://github.com/username"
+                >
+            </div>
+
+            <!-- Color -->
+            <div class="form-group">
+                <label for="color">Favorite Color</label>
+                <input
+                    type="color"
+                    id="color"
+                    name="color"
+                >
+            </div>
+
+            <!-- Range -->
+            <div class="form-group">
+                <label for="experience">
+                    Programming Experience
+                    <span id="experienceValue">0%</span>
+                </label>
+
+                <input
+                    type="range"
+                    id="experience"
+                    name="experience"
+                    min="0"
+                    max="100"
+                    value="0"
+                >
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Why do you want to join?</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                ></textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary">
+                    Register
+                </button>
+
+                <button type="reset" class="btn btn-secondary">
+                    Clear
+                </button>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<script>
+const experience = document.getElementById("experience");
+const experienceValue = document.getElementById("experienceValue");
+
+experience.addEventListener("input", function () {
+    experienceValue.textContent = experience.value + "%";
+});
+</script>
+</body>
+</html>
