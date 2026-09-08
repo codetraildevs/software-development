@@ -100,6 +100,7 @@ nav li a:hover {
   url(../html-practices/html-css/images/hero.png);
   background-repeat: no-repeat;
   background-position: center center;
+
   background-size: cover;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -122,10 +123,11 @@ nav li a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-size: 18px;
-  transition-property: width;
+  /* transition-property: width;
   transition-duration: 5s;
   transition-timing-function: ease-in-out;
-  transition-delay: 1s;
+  transition-delay: 1s; */
+  transition: transform 3s ease-out;
 }
 
 #home .hero-buttons .primary-btn{

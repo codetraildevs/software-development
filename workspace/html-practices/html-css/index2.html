@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS box modle</title>
+    <style>
+      .course-card {
+        display:inline-block;
+        width: 300px;
+        height: auto;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        /* border-style: dashed; */
+        box-sizing: border-box;
+        visibility: visible;
+        /* overflow: hidden; */
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        /* 1. Define the initial state */
+        transform: translateY(0) scale(1);
+        /* 2. Tell CSS to animate the transform property smoothly */
+        transition: transform 0.3s ease-out;
+        vertical-align:top;
+      }
+
+      .course-card1{
+        
+display: none;
+      }
+      .course-card:hover {
+        /* 3. Define the ending state on hover */
+        transform: translateY(-10px) scale(1.05);
+        /* transform: rotate(15deg) scale(1.1) translateX(5px); */
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        opacity: 1;
+        object-fit: contain;
+      }
+      a{display: inline;
+        padding: 10px;
+        text-decoration: none;
+        color:white;
+        border-radius: 5px;
+        background-color: blue;
+      }
+
+      nav a {
+ display: inline-block;
+ padding: 12px 20px;
+ margin: 5px;
+ text-decoration: none;
+ background-color: #0b5ed7;
+ color: white;
+}
+    </style>
+  </head>
+  <body>
+
+
+    <nav>
+ <a href="#">Home</a>
+ <a href="#">About</a>
+ <a href="#">Courses</a>
+ <a href="#">Contact</a>
+</nav>
+    <br> <br>
+
+<a href="">HTML</a>
+<a href="">CSS</a>
+<a href="">JavaScript</a>
+
+  <br/><br>
+    <h1 style="background-color: blue;">CSS BOX MODEL</h1>
+    <div class="course-card1">
+      <img
+        src="./images/backend.png"
+        alt="JavaScript programming course"
+        height="100"
+        width="100"
+      />
+
+      <div class="course-content">
+        <span class="course-level"> Beginner to Intermediate </span>
+
+        <h3>JavaScript Development</h3>
+
+        <p>
+          Learn JavaScript fundamentals, modern JavaScript, ES6+, functions,
+          arrays, objects, asynchronous programming and practical application
+          development.
+        </p>
+
+        <ul>
+          <li>JavaScript Fundamentals</li>
+          <li>ES6+</li>
+          <li>DOM Manipulation</li>
+          <li>Asynchronous JavaScript</li>
+        </ul>
+
+        <a href="#" class="course-btn"> View Course </a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img
+        src="./images/backend.png"
+        alt="JavaScript programming course"
+        height="100"
+        width="100"
+      />
+
+      <div class="course-content">
+        <span class="course-level"> Beginner to Intermediate </span>
+
+        <h3>Backend Development</h3>
+
+        <p>
+          Learn JavaScript fundamentals, modern JavaScript, ES6+, functions,
+          arrays, objects, asynchronous programming and practical application
+          development.
+        </p>
+
+        <ul>
+          <li>JavaScript Fundamentals</li>
+          <li>ES6+</li>
+          <li>DOM Manipulation</li>
+          <li>Asynchronous JavaScript</li>
+        </ul>
+
+        <a href="#" class="course-btn"> View Course </a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img
+        src="./images/github-official-logo.jpg"
+        alt="JavaScript programming course"
+        height="100"
+        width="100"
+      />
+
+      <div class="course-content">
+        <span class="course-level"> Beginner to Intermediate </span>
+
+        <h3>Git/Github</h3>
+
+        <p>
+          Learn JavaScript fundamentals, modern JavaScript, ES6+, functions,
+          arrays, objects, asynchronous programming and practical application
+          development.
+        </p>
+
+        <ul>
+          <li>JavaScript Fundamentals</li>
+          <li>ES6+</li>
+          <li>DOM Manipulation</li>
+          <li>Asynchronous JavaScript</li>
+        </ul>
+
+        <a href="#" class="course-btn"> View Course </a>
+      </div>
+    </div>
+    <div class="course-card">
+      <img
+        src="./images/database.png"
+        alt="JavaScript programming course"
+        height="100"
+        width="100"
+      />
+
+      <div class="course-content">
+        <span class="course-level"> Beginner to Intermediate </span>
+
+        <h3>Database Development</h3>
+
+        <p>
+          Learn JavaScript fundamentals, modern JavaScript, ES6+, functions,
+          arrays, objects, asynchronous programming and practical application
+          development.
+        </p>
+
+        <ul>
+          <li>JavaScript Fundamentals</li>
+          <li>ES6+</li>
+          <li>DOM Manipulation</li>
+          <li>Asynchronous JavaScript</li>
+        </ul>
+
+        <a href="#" class="course-btn"> View Course </a>
+      </div>
+    </div>
+  </body>
+</html>
