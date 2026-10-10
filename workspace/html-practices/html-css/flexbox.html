@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Flex Box</title>
+  <style>
+    .container {
+      /* border: 1px solid yellow; */
+      height: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      /* align-items: center; */
+      gap: 20px;
+      flex-wrap: wrap;
+
+    }
+
+    .card {
+      height: 50px;
+      width: 100px;
+      border: 1px solid yellow;
+      padding: 8px;
+      border-radius: 5px;
+      flex-shrink: 1;
+      flex-basis: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">Javascript</div>
+    <div class="card">CSS</div>
+    <div class="card">Backend</div>
+    <div class="card">Javascript</div>
+    <div class="card">CSS</div>
+    <div class="card">Backend</div>
+  </div>
+</body>
+
+</html>

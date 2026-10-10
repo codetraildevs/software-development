@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      height: 200vh;
+      background: #f4f5f7;
+    }
+
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav.sticky-nav {
+      position: fixed;
+      top: 0;
+      background: #334155;
+      padding: 12px;
+      z-index: 100;
+    }
+
+    nav.sticky-nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .main-container {
+      padding: 20px;
+    }
+
+    /* 3. Positioned Course Card & Labels */
+    .course-card {
+      position: relative; /* Anchor for absolute labels & badges */
+      width: 300px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+
+    .course-label {
+      position: absolute;
+      top: -10px;
+      left: 15px;
+      background: #2563eb;
+      color: white;
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    /* 4. Notification Badge */
+    .icon-container {
+      position: relative; /* Anchor for badge */
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    .notification-badge {
+      position: absolute;
+      top: -5px;
+      right: -8px;
+      background: #ef4444;
+      color: white;
+      font-size: 10px;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-weight: bold;
+    }
+
+    /* 5. Floating Registration Button */
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #16a34a;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Development Bootcamp</h1>
+  </header>
+
+  <nav class="sticky-nav">
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="main-container">
+    <!-- Course Label & Notification Badge Demo -->
+    <div class="course-card">
+      <span class="course-label">BEST SELLER</span>
+      <h3>CSS Positioning Masterclass</h3>
+      <p>Master static, relative, absolute, fixed, and sticky positioning.</p>
+
+      <div class="icon-container">
+        🔔
+        <span class="notification-badge">3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Registration Button -->
+  <a href="#" class="floating-btn">Register Now</a>
+
+</body>
+</html>
